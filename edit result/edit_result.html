@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload/Edit result</title>
+    <link rel="stylesheet" href="edit_result_style.css">
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="outer">
+        <div class="full">
+            <h2>Upload/Edit the result</h2>
+            <form action="" class="form" id="form">
+                <div>
+                    <label for="name" class="form-label">Enter the student name:</label>
+                    <input type="text" name="name" id="name" class="form-control">
+                </div>
+
+                <div>
+                    <label for="rollNo" class="form-label">Enter the student Rollno.:</label>
+                    <input type="number" name="rollNo" id="rollNo" class="form-control" required>
+                </div>
+
+                <div>
+                    <label for="dept" form-label>Enter the student Department:</label>
+                    <select name="dept" id="dept" class="form-select" required>
+                        <option value="" selected disabled></option>
+                        <option value="AIADS">AIADS</option>
+                        <option value="CSE">CSE</option>
+                        <option value="Mech">Mech</option>
+                        <option value="Auto">Auto</option>
+                        <option value="ECE">ECE</option>
+                        <option value="IT">IT</option>
+                        <option value="Cyber Security">Cyber Security</option>
+                        <option value="Civil">Civil</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="english" class="form-label">Enter the English Mark:</label>
+                    <input type="number" name="english" id="english" class="form-control">
+                </div>
+
+                <div>
+                    <label for="maths" class="form-label">Enter the Maths Mark:</label>
+                    <input type="number" name="maths" id="maths" class="form-control">
+                </div>
+
+                <div>
+                    <label for="physics" class="form-label">Enter the Physics Mark:</label>
+                    <input type="number" name="physics" id="physics" class="form-control">
+                </div>
+
+                <div>
+                    <label for="chemistry" class="form-label">Enter the Chemistry Mark:</label>
+                    <input type="number" name="chemistry" id="chemistry" class="form-control">
+                </div>
+
+                <div>
+                    <label for="eg" class="form-label">Enter the Engineering Graphics Mark:</label>
+                    <input type="number" name="eg" id="eg" class="form-control">
+                </div>
+
+                <div class="button">
+                    <button type="reset" class="btn btn-secondary">Reset</button>
+                    <button type="submit" class="btn btn-primary">Save Result</button>
+                    <button type="button" class="btn btn-danger" onclick="delete_result()">Delete Student</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="edit_result_script.js"></script>
+</body>
+
+</html>
