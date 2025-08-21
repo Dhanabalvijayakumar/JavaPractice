@@ -3,7 +3,7 @@ package MyFirstExample;
 public class Casting {
 
 	public static void main(String[] args) {
-		int myInt = 7;
+		int myInt = 8;
 		double myDouble = myInt;
 		System.out.println("Value of myInt is "+myInt);
 		System.out.println("Value of myDouble is "+myDouble);
